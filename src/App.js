@@ -32,6 +32,7 @@ import 'aos/dist/aos.css'
     }
     .pageText {
     font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+    margin: 1em;
     }
   `
   const HeaderImg = styled(Box)`
@@ -83,7 +84,7 @@ export default function App(){
           We do this by placing our storytellers and developers first <br/>
           because we believe a diverse and inclusive studio can tell the most relatable and powerful stories.</h5>
       </div>
-      <Grid container justifyContent="center" alignItems="center">
+      <Grid container justifyContent="center" alignItems="center" margin="1em">
         <Grid item xs={6} sm={3} gap={{xs: .5}} noWrap className="emailInput" >
           <div className="emailInput" noWrap>
           Get notified when we launch site</div>
@@ -107,9 +108,7 @@ export default function App(){
           </Button>
           </Grid>
         </Grid>
-    </ContentDiv>
-    
-   <BottomNavigation align-self="flex-end">
+        <BottomNavigation align-self="flex-end">
           <BottomNavigationAction href="https://www.facebook.com/JumpButtonStudio/"
            label="Facebook" value="recents" icon={<FacebookIcon  style={{fill: "black"}}/>} />
           <BottomNavigationAction href="https://twitter.com/JumpButtonS"
@@ -119,6 +118,9 @@ export default function App(){
           <BottomNavigationAction href="https://www.youtube.com/channel/UCLWl_R2zfy94mQjY-Ctqs2g"
           label="YouTube" value="folder" icon={<YouTubeIcon  style={{fill: "black"}}/>} />
         </BottomNavigation>
+    </ContentDiv>
+    
+  
    
     </Grid>
     </div>
